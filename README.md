@@ -1,4 +1,4 @@
 <h1 align="center">
-projeto 1
+Projeto Sorriso Perfeito
 </h1><br> 
 projeto feito na materia de web 2
