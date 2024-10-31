@@ -1,0 +1,136 @@
+body{
+   
+    margin: 0;
+background-color: #ffffffbb;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+header{
+    background:linear-gradient(to top, rgb(105, 240, 229),rgb(32, 64, 193));
+box-shadow: 0 0 20px rgb(91, 91, 91);
+}
+/* começo menu mobile*/
+.mobile-menu {
+    margin-top: 40px;
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+    
+    background-color: rgb(45, 45, 45);
+    padding: 5px;
+    border-radius: 10px;
+  }
+  
+  .mobile-menu div {
+    opacity: 1;
+    width: 15px;
+    height: 2px;
+   
+    margin: 3px;
+    transition: 0.3s;
+  }
+  /* barra lateral menu hamburguer*/
+  #menu-mobile {
+    
+    top: 0px;
+    position: fixed;
+    padding: 10px;
+
+    float: left;
+  }
+  
+  #menu-mobile ul li {
+    height: 110px;
+  }
+  #menu-mobile ul {
+    margin-top: 90px;
+    
+    top: 35px;
+    display: block;
+    position: fixed;
+ 
+    float: left;
+  }
+  #menu-mobile {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+  
+  #menu-mobile {
+    display: none;
+  }
+  
+#menu-mobile li :hover {
+    background-color: #4d4d4d;
+    color: rgb(0, 0, 0);
+  }
+  
+  #menu-mobile > ul > li > a {
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    text-align: center;
+    background-color: #333;
+    color: aliceblue;
+    border-top: 2px solid rgb(247, 0, 255);
+  }
+
+  /* final menu mobile*/
+ 
+  /* começo das imagens dos clientes*/
+
+.card img{
+  object-fit: contain;
+}
+
+.card{
+ 
+    cursor: pointer;
+    position: absolute;
+    width: 30%;
+    left: 0;
+    right: 0;
+    margin:0 auto;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 0 50px 0 #000000;
+    transition: 0.5s ease;
+    cursor: pointer;
+    
+}
+.card img{
+    width: 100%;
+    object-fit:contain;
+}
+
+ input[type=radio]{
+    display: none;
+}
+
+
+ 
+  /* fim das imagens dos clientes*/
+
+  /*começo dos comentarios dos clientes*/
+  .depoimentos > div{
+text-align: center;
+  }
+  .depoimentos{
+border-radius: 15%;
+    background:linear-gradient(to bottom, rgb(210, 255, 232),rgb(16, 234, 110));
+  }
+
+
+  i {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
