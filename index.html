@@ -17,36 +17,49 @@
           alt="logo da empresa"
         />
       </div>
-
-      <div class="mobile-menu" onclick="clickmenu()">
-        <div style="background-color: aliceblue;" id="line1"></div>
-        <div style="background-color: aliceblue;"id="line2"></div>
-        <div  style="background-color: aliceblue;" id="line3"></div>
-      </div>
-     
-    </header> 
-    <menu id="menu-mobile">
+      <menu class="nav-pc">
         <ul>
-          <li><a href="#iniciar">Home</a></li>
-          <li><a href="#historia">Sobre</a></li>
-          <li><a href="#slider">Promoções</a></li>
-          <li><a href="#produtos">Produtos</a></li>
-          <li><a href="#contatos">Contato</a></li>
+          <li> <a href="#fotos">fotos dos pacientes</a></li>
+          <li><a href="#comentarios"> comentarios dos clientes</a></li>
+          <li><a href="#sevicos">Serviços oferecidos</a></li>
+          <li><a href="#mensagem">nos mando uma mensagem</a></li>
+          <li><a href="#contatos">contatos</a></li>
         </ul>
       </menu>
+      <button class="menu-btn">&#9776;</button>
+  
+     
+    </header> 
+ 
+
+
+      <div class="menu" id="menu">
+        <a href="#fotos">fotos dos pacientes</a>
+        <a href="#sevicos">Serviços oferecidos</a>
+        <a href="#comentarios"> comentarios dos clientes</a>
+        <a href="#mensagem">nos mando uma mensagem</a>
+        <a href="#contatos">contatos</a>
+        <a href="#"> </a>
+        <button id="close-menu" style="margin-top: 20px;">Fechar</button>
+    </div>
+
 
     <main>
+      <div>
       <section class="home">
-        <h1>Bem-vindo à Clínica Odontológica Sorriso Radiante!
+        <h1>Bem-vindo à Clínica Odontológica Sorriso perfeito!
 
         <!-- Introdução sobre o consultório e um destaque sobre os serviços  -->
 
       </section>
 
-      <section class="servicos">
-        <!-- Lista dos serviços dentários oferecidos -->
-
-      </section>
+      
+      <div class="titulo"  style="margin-bottom: 100px;margin-top: 150px;">
+        <div class="line">
+          <div id="fotos"></div>  
+          <p id="text-titulo">Fotos dos Pacientes</p>
+        </div>
+    </div>
 
       <section class="galeria">
 
@@ -85,10 +98,57 @@
     
 
       </section>
+      <div class="titulo"  style="margin-bottom: 100px;margin-top: 150px;">
+        <div class="line">
+            <p id="text-titulo">serviços oferecidos</p>
+            <div id="sevicos"></div>  
+        </div>
+    </div>
+      <section class="servicos">
+        <!-- Lista dos serviços dentários oferecidos -->
+         <div class="servico1">
+          <h1>clareamento dental</h1>
+          <p>asdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsds</p>
+ 
+      
 
+         </div>
+
+         <div class="servico2">
+          <h1>Tratamento de canal</h1>
+          <p>asdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsds</p>
+ 
+         </div>
+<div class="servico3">
+  
+  <h1>limpeza dental</h1>
+  <p>asdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsds</p>
+ 
+         </div>
+
+         <div class="servico4">
+ <h1>Restaurações dentais</h1>
+ <p>aasdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsds</p>
+ 
+</div>
+<div class="servico5">
+  
+  <h1>Extrações dentárias</h1>
+  <p>asdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsds</p>
+ 
+         </div>
+
+      </section>
+      <div class="titulo"  style="margin-bottom: 100px;margin-top: 150px;">
+        <div class="line">
+          <div id="comentarios"></div>  
+            <p id="text-titulo">Comentarios dos pacientes</p>
+        </div>
+    </div>
       <section class="depoimentos">
-        <!-- Comentário de 2 a 3 pacientes fictícios -->
-         <div class="comentario1">
+            <ul><!-- Comentário de 2 a 3 pacientes fictícios -->
+              <li><div  class="comentario1">
+      
             <h1>comentario1</h1>
 
             <p>Excelente atendimento! O dentista foi muito atencioso e explicou todo o 
@@ -96,18 +156,22 @@
                 confortável durante a consulta e os resultados foram ótimos. Recomendo!</p>
 
          </div>
+        </li>
 
-         <div class="comentario2">
+         <li>
+           <div class="comentario2">
             <h1>comentario2</h1>
 
-            <p>Estou muito satisfeito com o atendimento! A equipe foi super gentil e 
+           <p>Estou muito satisfeito com o atendimento! A equipe foi super gentil e 
                 profissional, e o dentista fez um ótimo trabalho. Ele me deixou à 
                 vontade e respondeu todas as minhas perguntas. Com certeza voltarei e 
                 indicarei para amigos! </p>
 
          </div>
+        </li>
 
-         <div class="comentario3">
+         <li> 
+          <div class="comentario3">
 
             <h1>comentario3</h1>
 
@@ -115,20 +179,85 @@
                 O ambiente é agradável e a equipe é muito simpática. O dentista foi 
                 paciente e detalhista, explicando cada etapa do tratamento. Saí com 
                 um sorriso renovado e sem dor. Altamente recomendado!</p>
-
+            </li>
          </div>
-         
+         </ul>
 
       </section>
-
+      <div class="titulo"  style="margin-bottom: 100px;margin-top: 100px;">
+        <div class="line">
+          <div id="mensagem"></div>  
+            <p id="text-titulo">contato</p>
+        </div>
+    </div>
       <section class="formulario">
         <!-- Formulário para o visitante preencher, com nome, e-mail e mensagem -->
-         
+        <div class="formulario">
+          
+          <form id="gmail" action="https://formsubmit.co/higorgom002@gmail.com" method="POST">
+            <p>envie-nos uma mensagem :</p>
+            <input id="nome" type="text" name="name" placeholder="Digite seu nome" required>
+
+            <input id="email" type="email" name="email" placeholder="Digite seu e-mail" required>
+
+             <input id="mensagem" type="" name="message" value=""placeholder="Digite sua mensagem aqui">
+
+            <button type="submit" onclick="verificarCampos()"><b>ENVIAR</b></button> 
+
+           
+            <input type="hidden" name="_subject" value="site de roupas">
+            <input type="text" name="_honey" style="display:none">
+
+
+          </form>
+</div>
       </section>
     </main>
 
     <footer>
+     
+      <div class="info">
+        <div id="contatos"></div>  
+      <div id="icons">
+        <ion-icon name="mail-outline" size="large"></ion-icon>
+      <ion-icon name="call-outline" size="large"></ion-icon>
+    </div>
+    
+    <div id="texts">
+      <p>sorrisoPerfeito@gmail.com</p>
+      <p>51 9002-8922</p>
+    </div>
+    </div>
+   
+      <div style=" text-align: center;color:  aliceblue" id="links"> <h1 style="text-align: center;color: rgb(0, 255, 255);">Redes Sociais</h1>
+        
+        <ion-icon name="logo-facebook"size="large"></ion-icon>
+        <ion-icon name="logo-instagram"size="large"></ion-icon>
+        <ion-icon name="logo-linkedin"size="large"></ion-icon>
+      
+    </div>
+    <p style="text-align: center;font-size: 20px;color: rgb(0 255 231);margin: 0;">&copy; 2024 sorriso Perfeito. Todos os direitos reservados.</p>
       <!-- Informações de contato, links para redes sociais, e direitosautorais. -->
     </footer>
-  </body>
+
+     
+  
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule="" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</div>
+<script>
+  const menuBtn = document.querySelector('.menu-btn');
+  const menu = document.getElementById('menu');
+  const closeMenuBtn = document.getElementById('close-menu');
+
+  menuBtn.addEventListener('click', () => {
+      menu.classList.toggle('active');
+  });
+
+  closeMenuBtn.addEventListener('click', () => {
+      menu.classList.remove('active');
+  });
+</script>
+</body>
+  
 </html>
