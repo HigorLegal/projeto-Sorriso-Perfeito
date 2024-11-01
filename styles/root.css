@@ -1,85 +1,113 @@
 body{
-   
+
     margin: 0;
 background-color: #ffffffbb;
+}
+*, *::before, *::after {
+  box-sizing: border-box;
 }
 html {
     scroll-behavior: smooth;
 }
 
+header button{
+height: 30px;
+
+}
+#text-titulo {
+  border: solid 2px rgb(0, 129, 134);
+  border-right: 5px solid rgb(0, 0, 0);
+  border-left: 5px solid black;
+border-radius: 30px;
+  top: -10px;
+  z-index: 99;
+  margin: 0 auto;
+  text-align: center;
+  width: 200px;
+  font-size: 18px;
+  background: #14e7dc;
+  color: #000000;
+
+}
+.titulo {
+  
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin-top: 40px;
+  
+  color: #010101;
+}
+.line{
+  width: 80%;
+  height: 3px;
+  background: #000000;
+  
+}
 header{
+  align-items: center;
     background:linear-gradient(to top, rgb(105, 240, 229),rgb(32, 64, 193));
 box-shadow: 0 0 20px rgb(91, 91, 91);
 }
 /* começo menu mobile*/
-.mobile-menu {
-    margin-top: 40px;
-    margin-left: 10px;
-    width: 20px;
-    height: 20px;
-    
-    background-color: rgb(45, 45, 45);
-    padding: 5px;
-    border-radius: 10px;
-  }
-  
-  .mobile-menu div {
-    opacity: 1;
-    width: 15px;
-    height: 2px;
-   
-    margin: 3px;
-    transition: 0.3s;
-  }
+
   /* barra lateral menu hamburguer*/
-  #menu-mobile {
-    
-    top: 0px;
-    position: fixed;
-    padding: 10px;
 
-    float: left;
-  }
-  
-  #menu-mobile ul li {
-    height: 110px;
-  }
-  #menu-mobile ul {
-    margin-top: 90px;
-    
-    top: 35px;
-    display: block;
-    position: fixed;
  
-    float: left;
-  }
-  #menu-mobile {
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
-  }
-  
-  #menu-mobile {
-    display: none;
-  }
-  
-#menu-mobile li :hover {
-    background-color: #4d4d4d;
-    color: rgb(0, 0, 0);
-  }
-  
-  #menu-mobile > ul > li > a {
-    display: block;
-    padding: 20px;
-    text-decoration: none;
-    text-align: center;
-    background-color: #333;
-    color: aliceblue;
-    border-top: 2px solid rgb(247, 0, 255);
-  }
 
+/* Estilo do menu */
+.menu button {
+  
+padding: 10px;
+font-size: 20px;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background :linear-gradient(to top, rgba(105, 240, 229, 0.86),rgba(29, 61, 188, 0.86));
+    color: rgb(0, 0, 0);
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilo quando o menu está ativo */
+.menu.active {
+    transform: translateX(0);
+}
+
+/* Estilo dos links do menu */
+.menu a {
+  background-color: rgb(215, 215, 215);
+  padding: 10px;
+    color: rgb(0, 0, 0);
+    border: 2px solid black;
+    text-decoration: none;
+    font-size: 24px;
+    margin: 10px 0;
+}
+ 
+
+
+
+.nav-pc ul{
+  margin-top: 35px;
+display: inline-flex;
+list-style: none ;
+gap: 20px;
+}
+  
   /* final menu mobile*/
  
   /* começo das imagens dos clientes*/
@@ -117,14 +145,33 @@ box-shadow: 0 0 20px rgb(91, 91, 91);
   /* fim das imagens dos clientes*/
 
   /*começo dos comentarios dos clientes*/
+  .depoimentos > ul {
+    list-style: none;
+  }
   .depoimentos > div{
 text-align: center;
+
   }
   .depoimentos{
+    border:3px solid rgb(61, 61, 61);
+    border-bottom:10px solid rgb(0, 0, 0);
+    border-top:10px solid rgb(0, 0, 0);
 border-radius: 15%;
     background:linear-gradient(to bottom, rgb(210, 255, 232),rgb(16, 234, 110));
   }
-
+.servicos h1{
+  text-align: center;
+font-size: 17px;
+}
+.servicos{
+  
+display: block;
+}
+.servicos div{
+  
+  border-radius: 30px;
+  background-color: rgb(131 131 131 / 61%);
+}
 
   i {
     -webkit-touch-callout: none;
@@ -134,3 +181,51 @@ border-radius: 15%;
     -ms-user-select: none;
     user-select: none;
   }
+  footer{
+    margin-top: 50px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-top: 5px solid #000000;
+    background: linear-gradient(to bottom, rgb(0, 203, 98),rgb(1, 69, 30));
+  }
+  .info{
+    justify-content: center;
+       display: flex;
+    color: aliceblue;
+     }
+     .info #texts{
+        display: flex;
+        flex-direction: column;
+     }
+     .info p{
+    padding-top: 25px;
+     }
+     #icons ion-icon{
+      padding-right: 10px;
+        padding-top: 40px;
+     }
+     #icons{
+        display: flex;
+        flex-direction: column;
+      }
+      #gmail button{
+padding: 15px;
+font-size: 20px;
+
+      }
+      #gmail{
+        margin-top: 20px;
+        text-align: center;
+        border:3px solid #000000;
+        display: flex;
+        flex-direction: column;
+
+    }
+    #mensagem{
+      padding-bottom: 100px;
+    }
+    #nome,#email{
+      border-top:3px solid #000000;
+      border-bottom:3px solid #000000;
+    padding: 10px;
+    }
