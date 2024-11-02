@@ -42,7 +42,7 @@ As tecnologias e ferramentas utilizadas neste projeto são:
 - **CSS3**: Estilos visuais e layout responsivo.
 - **JavaScript**: Validação de formulários e animações interativas.
 - **Google Fonts**: Tipografia estilosa e legível.
-- **Font Awesome**: Ícones para aprimorar a interface do usuário.
+
 
 ## Estrutura de Pastas
 
