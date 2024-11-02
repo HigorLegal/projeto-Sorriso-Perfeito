@@ -1,7 +1,7 @@
-@media screen and (max-width: 648px){ 
+@media screen and (max-width: 758px){ 
 #logo{
-width: 150px;
-height: 100px;
+width: 100px;
+height: 90px;
 }
 .nav-pc{
     display: none;
@@ -46,6 +46,13 @@ display: flex;
         height: 25vh;
        
     }
+    
+    .servicos div{
+        margin-bottom: 10px; 
+        
+        width: 70%;
+        
+        padding: 10px;}
     #texts p{
  font-size: large;
     }
@@ -53,12 +60,37 @@ display: flex;
     #links{
         margin-bottom: 40px;
     }
-    
+    #gmail{
+        
+       display: flex;
+       flex-direction: column;
+        
+              }
+             
 }
 
 
 
 @media screen and (min-width: 758px){
+
+    header a:hover{
+       
+        box-shadow: 0 0 20px white;
+        color: #ffffff;
+        transform: scale(1.10);
+        padding: 13px 23px;
+}
+     .servicos div{
+        margin-bottom: 10px;
+        
+        width: 50%;
+        padding: 10px;}
+    .formulario{
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+              }
     footer{
         align-items: center;
         justify-content: space-evenly;
@@ -66,10 +98,15 @@ display: flex;
 
         
     }
+    #gmail{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
     #logo{
 
-        width: 300px;
-        height: 210px;
+        width: 100px;
+        height: 90px;
         }
         .menu-btn{
 
