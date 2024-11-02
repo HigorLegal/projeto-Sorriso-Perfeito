@@ -3,8 +3,7 @@
 projeto feito na materia de web 2
 
 ![Banner do
-Projeto](https://via.placeholder.com/1200x300.png?text=Sorriso+Perfeit
-o+-+Landing+Page+Projeto)
+Projeto](print da tela do site)
 
 ## Sobre o Projeto
 
